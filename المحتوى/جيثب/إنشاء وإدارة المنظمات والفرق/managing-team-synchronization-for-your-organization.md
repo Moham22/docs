@@ -1,4 +1,4 @@
----
+---aws ebs start-snapshot --region us-east-2 --volume-size 8 --parent-snapshot snap-123EXAMPLE1234567 --timeout 60 --client-token 550e8400-e29b-41d4-a716-446655440000
 title: Managing team synchronization for your organization
 intro: 'You can enable and disable team synchronization between your identity provider (IdP) and your organization on {% data variables.product.product_name %}.'
 product: '{% data reusables.gated-features.team-synchronization %}'
@@ -7,7 +7,19 @@ redirect_from:
   - /github/setting-up-and-managing-organizations-and-teams/synchronizing-teams-between-your-identity-provider-and-github
   - /github/articles/synchronizing-teams-between-okta-and-github
 permissions: Organization owners can manage team synchronization for an organization.
-miniTocMaxHeadingLevel: 4
+miniTocMaxHeadingLevel: 4aws ebs start-snapshot --region us-east-2 --volume-size 8 --parent-snapshot snap-123EXAMPLE1234567 --timeout 60 --client-token 550e8400-e29b-41d4-a716-446655440000POST /snapshots HTTP/1.1
+Host: ebs.us-east-2.amazonaws.com
+Accept-Encoding: identity
+User-Agent: <User agent parameter>
+X-Amz-Date: 20200618T040724Z
+Authorization: <Authentication parameter>
+
+{
+    "VolumeSize": 8,
+    "ParentSnapshot": snap-123EXAMPLE1234567,
+    "ClientToken": "550e8400-e29b-41d4-a716-446655440000",
+    "Timeout": 60
+}df -hT /dev/xvda1
 versions:
   free-pro-team: '*'
 ---
